@@ -41,7 +41,7 @@ COPY .pnp.loader.mjs .pnp.loader.mjs
 COPY .yarnrc.docker.yml .yarnrc.yml
 COPY .yarn ./.yarn
 
-RUN yarn install --immutable --immutable-cache
+RUN yarn install --immutable
 
 ########################################################################
 # builder                                                              #
