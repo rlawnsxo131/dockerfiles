@@ -1,0 +1,18 @@
+enableStrictSsl: false
+
+yarnPath: .yarn/releases/yarn-3.6.4.cjs
+
+nodeLinker: pnp
+pnpMode: strict
+
+enableStrictSsl: false
+
+yarnPath: .yarn/releases/yarn-3.6.4.cjs
+
+supportedArchitectures:
+  os:
+    - 'current'
+  cpu:
+    - 'current'
+  libc:
+    - 'current'
