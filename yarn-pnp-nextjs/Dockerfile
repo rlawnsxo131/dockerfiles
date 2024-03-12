@@ -50,6 +50,8 @@ FROM base AS builder
 
 WORKDIR /app
 
+ARG PHASE
+
 # 프로젝트 빌드
 COPY --from=deps /app/.yarn ./.yarn
 COPY --from=deps /app/.pnp.cjs ./.pnp.cjs
