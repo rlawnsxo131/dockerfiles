@@ -20,8 +20,8 @@ ENV NEXT_TELEMETRY_DISABLED 1
 WORKDIR /app
 
 # 로그 설정
-ENV PID_PATH './logs/fe-app.pid'
-ENV LOGFILE_PATH './logs/json_out.log'
+ENV PID_PATH '/app/logs/fe-app.pid'
+ENV LOGFILE_PATH '/app/logs/json_out.log'
 
 COPY logrotate /etc/logrotate.d/logrotate
 RUN mkdir ./logs
